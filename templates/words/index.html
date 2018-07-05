@@ -4,15 +4,17 @@
     {% load static %}
     <meta charset="UTF-8">
     <title>OXFORD</title>
+    <link rel="stylesheet" type="text/css" href="/static/library.css">
 </head>
-<body background="/static/aish.jpg">
+<body>
  <h1 align="center"> Welcome to jeetu's dictionary </h1>
 {% if valid %}
-    <form action="" method="post">
+  <div> <form action="" method="post">
     {% csrf_token %}
-    Enter the word to be search:<input type="text" name="name"><br>
-    <button type="submit">Submit</button>
+      <p> Enter the word to be search : <input type="text" name="name"><br>
+          <button type="submit">Search</button></p>
 </form>
+    </div>
 {% endif %}
  {% for result in res.results %}
     <h1> {{ result.word }}</h1>

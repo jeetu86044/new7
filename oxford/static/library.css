@@ -1,0 +1,56 @@
+body{
+    background-image:  url("/static/book3.jpg");
+    background-size: 1400px 750px ;
+}
+h1{
+    color: red;
+    font-family: "Monotype Corsiva";
+    font-size: 60px;
+}
+h3{
+    color: springgreen;
+    font-size: 30px;
+}
+ul{
+    font-size: 30px;
+    color: #1eff1e;
+}
+p{
+    font-size: 30px;
+    color: #1eff1e;
+    font-size: 30px;
+    alignment: center;
+}
+div {
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+
+}
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 30%;
+    margin: 10px 370px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+p{
+    font-size: 30px;
+}
