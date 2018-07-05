@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OXFORD</title>
+</head>
+<body>
+ <h1 align="center"> Welcome to jeetu's dictionary </h1>
+{% if valid %}
+    <form action="" method="post">
+    {% csrf_token %}
+    Enter the word to be search:<input type="text" name="name"><br>
+    <button type="submit">Submit</button>
+</form>
+{% endif %}
+ {% for result in res.results %}
+    <h1> {{ result.word }}</h1>
+      {% for lexen in result.lexicalEntries %}
+          <h3>{{lexen.lexicalCategory}}</h3>
+          {% for ent in lexen.entries %}
+
+              {% for sen in ent.senses %}
+                  <ul>
+                 {% for def in sen.definitions %}
+                   <li> {{ def }}<br> </li>
+                {% endfor %}
+                  </ul>
+              {% endfor %}
+          {% endfor %}
+      {% endfor %}
+ {% endfor%}
+ {% if valid is False %}
+<audio controls>
+  <source src="{{ audio }}" type="audio/mpeg">
+</audio>
+{% endif %}
+</body>
+</html>
