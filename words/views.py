@@ -2,8 +2,13 @@ from django.shortcuts import render
 from django.http import  HttpResponse
 import  requests
 # Create your views here.
+from django.contrib.auth.mixins import LoginRequiredMixin
 def index(request):
+    var = LoginRequiredMixin
+    var.login_url = '/'
 
+    var.redirect_field_name = 'redirect_to'
+    print("Hello"+var.login_url)
     if(request.POST):
         res = {}
         api_id = 'e6897aa7'

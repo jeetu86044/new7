@@ -1,6 +1,6 @@
 body{
     background-image:  url("/static/book3.jpg");
-    background-size: 1400px 750px ;
+    background-size: auto;
 }
 h1{
     color: red;
@@ -39,7 +39,7 @@ input[type=text], select {
 
 button[type=submit] {
     width: 30%;
-    margin: 10px 370px;
+    margin: 5% 55%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
