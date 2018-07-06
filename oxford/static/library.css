@@ -1,6 +1,7 @@
 body{
     background-image:  url("/static/book3.jpg");
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 h1{
     color: red;
@@ -18,8 +19,6 @@ ul{
 p{
     font-size: 30px;
     color: #1eff1e;
-    font-size: 30px;
-    alignment: center;
 }
 div {
     border-radius: 5px;
@@ -29,11 +28,11 @@ div {
 }
 input[type=text], select {
     width: 40%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 2% 5%;
+    margin: 3% 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4%;
     box-sizing: border-box;
 }
 
@@ -42,9 +41,9 @@ button[type=submit] {
     margin: 5% 55%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
+    padding: 2% 4%;
     border: none;
-    border-radius: 4px;
+    border-radius: 4%;
     cursor: pointer;
 }
 
