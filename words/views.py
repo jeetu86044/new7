@@ -16,7 +16,7 @@ def index(request):
             if response.status_code == 200:
                 res = response.json()
                 name = res['results'][0]['word']
-                print(name)
+                #print(name)
                 url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/' + name.lower()
                 response = requests.get(url,headers = {'app_id': api_id, 'app_key': api_key})
                 if response.status_code == 200:
