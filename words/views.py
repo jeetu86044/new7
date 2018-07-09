@@ -28,6 +28,7 @@ def index(request):
                     'audio':audio_url,
                     }
                     return render(request,'words/index.html', context)
+			return HttpResponse("<h2>Please enter valid english word</h2>")
         except:
             return HttpResponse("<h2>Please enter valid english word</h2>")
 
